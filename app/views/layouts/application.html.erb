@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Y</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    
+    <footer class="footer bg-light" style="background-color: #a52a2a; color: black; text-align: center; padding: 20px; position: fixed; bottom: 0; width: 100%; left: 0;">
+      <div class="container text-center py-3">
+        <p>&copy; 2024 Mikaela's Company. All rights reserved..</p>
+        <p>
+          Síguenos en:
+          <a href="URL_INSTAGRAM" target="_blank" style="color: black;">instagram</a>  
+        </p>
+      </div>
+    </footer>
+
+  </head>
+
+  <body>
+    <%= render 'layouts/navbar' %>
+    
+  </body>
+  <%= yield %>
+
+</html>
